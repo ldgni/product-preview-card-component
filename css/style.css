@@ -1,0 +1,185 @@
+:root {
+  --clr-bg: #f2eae2;
+  --clr-content-bg: #fff;
+  --clr-text: #6c7289;
+  --clr-title: #1c232b;
+
+  --ff-base: "Montserrat", sans-serif;
+  --ff-secondary: "Fraunces", sans-serif;
+  --fs-base: 0.875rem;
+  --fw-base: 500;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces9pt-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Fraunces9pt-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* GENERAL */
+
+body {
+  background-color: var(--clr-bg);
+  font-family: var(--ff-base);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  color: var(--clr-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75rem 1rem;
+  min-height: 100vh;
+}
+
+/* MAIN */
+
+.product {
+  display: grid;
+  background: var(--clr-content-bg);
+  border-radius: 0.625rem;
+  overflow: hidden;
+  max-width: 37.5rem;
+}
+
+.product__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.content__category {
+  font-size: 0.75rem;
+  letter-spacing: 0.3125rem;
+  margin-bottom: 1rem;
+}
+
+.content__title {
+  font-family: var(--ff-secondary);
+  color: var(--clr-title);
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content__text {
+  line-height: 1.4375rem;
+  margin-bottom: 1.5rem;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  gap: 1.19rem;
+  margin-bottom: 1.25rem;
+}
+
+.new-price {
+  font-family: var(--ff-secondary);
+  color: #3d8168;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.old-price {
+  font-size: 0.8125rem;
+  color: #6c7289;
+  line-height: 1.4375rem;
+  text-decoration: line-through;
+}
+
+.content__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.73rem;
+  font-size: 0.875rem;
+  color: #fff;
+  font-weight: 700;
+  background-color: #3d8168;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.content__btn[data-icon="shopping-cart"]::before {
+  content: "";
+  background-image: url("../assets/images/cart-icon.svg");
+  width: 15px;
+  height: 16px;
+}
+
+.content__btn:is(:hover, :focus) {
+  background-color: #1a4032;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product__content {
+    padding: 2rem;
+  }
+
+  .content__category {
+    margin-bottom: 1.5rem;
+  }
+
+  .content__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .content__text {
+    margin-bottom: 1.81rem;
+  }
+
+  .flex-group {
+    margin-bottom: 1.88rem;
+  }
+}
