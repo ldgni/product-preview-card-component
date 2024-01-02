@@ -159,7 +159,7 @@ body {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 40rem) {
+@media (min-width: 64rem) {
   .product {
     grid-template-columns: 1fr 1fr;
   }
