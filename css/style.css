@@ -56,6 +56,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  font: inherit;
+}
+
 /* GENERAL */
 
 body {
@@ -114,7 +118,7 @@ body {
 }
 
 .content__text {
-  line-height: 1.437rem;
+  line-height: 1.4rem;
   margin-bottom: 1.5rem;
 }
 
@@ -136,7 +140,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.73rem;
-  font-size: var(--fs-base);
   color: #fff;
   font-weight: 700;
   background-color: #3d8168;
