@@ -1,10 +1,10 @@
 :root {
   --clr-bg: #f2eae2;
   --clr-content-bg: #fff;
+  --clr-heading: #1c232b;
   --clr-text: #6c7289;
-  --clr-title: #1c232b;
 
-  --ff-base: "Montserrat", sans-serif;
+  --ff-primary: "Montserrat", sans-serif;
   --ff-secondary: "Fraunces", sans-serif;
   --fs-base: 0.875rem;
   --fw-base: 500;
@@ -64,7 +64,7 @@ button {
 
 body {
   background-color: var(--clr-bg);
-  font-family: var(--ff-base);
+  font-family: var(--ff-primary);
   font-size: var(--fs-base);
   font-weight: var(--fw-base);
   color: var(--clr-text);
@@ -115,7 +115,7 @@ body {
 
 .content__title {
   font-family: var(--ff-secondary);
-  color: var(--clr-title);
+  color: var(--clr-heading);
   font-size: 2rem;
   line-height: 2rem;
   margin-bottom: 1rem;
