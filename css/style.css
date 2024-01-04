@@ -152,6 +152,7 @@ body {
   padding: 1rem 0;
   width: 100%;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .content__btn[data-icon="shopping-cart"]::before {
