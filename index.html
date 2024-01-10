@@ -17,8 +17,8 @@
   </head>
   <body>
     <main>
-      <article>
-        <picture>
+      <article class="product">
+        <picture class="product__image">
           <source
             srcset="images/image-product-desktop.webp"
             media="(min-width: 37.5rem)"
@@ -36,8 +36,14 @@
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <div class="content__price">
-            <p class="price__new">$149.99</p>
-            <del class="price__old">$169.99</del>
+            <p class="price__new">
+              <span class="visually-hidden">Current price:</span>
+              $149.99
+            </p>
+            <del class="price__old">
+              <span class="visually-hidden">Original price:</span>
+              $169.99
+            </del>
           </div>
           <button class="content__btn" data-icon="shopping-cart">
             Add to Cart

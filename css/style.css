@@ -1,3 +1,5 @@
+/* GENERAL */
+
 body {
   background-color: #f2eae2;
   color: #6c7289;
@@ -11,7 +13,21 @@ body {
   min-height: 100vh;
 }
 
-article {
+/* UTILITY */
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+}
+
+/* PRODUCT */
+
+.product {
   border-radius: 0.625rem;
   overflow: hidden;
   max-width: 37.5rem;
@@ -19,15 +35,23 @@ article {
 }
 
 @media (min-width: 37.5rem) {
-  article {
+  .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-picture img {
-  min-height: 100%;
+/* PRODUCT IMAGE */
+
+.product__image {
+  display: flex;
 }
+
+.product__image img {
+  object-fit: cover;
+}
+
+/* PRODUCT CONTENT */
 
 .product__content {
   background-color: #fff;
