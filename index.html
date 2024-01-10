@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Product Preview Card Component" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Product Preview Card Component</title>
   </head>
   <body>
     <main>
-      <article class="product">
+      <article>
         <picture>
           <source
-            srcset="assets/images/product-desktop-image.webp"
+            srcset="images/image-product-desktop.webp"
             media="(min-width: 37.5rem)"
           />
           <img
-            src="assets/images/product-mobile-image.webp"
+            src="images/image-product-mobile.webp"
             alt="Gabrielle CHANEL perfume bottle laying on a white surface"
-            class="picture__img"
           />
         </picture>
         <div class="product__content">
@@ -29,9 +35,9 @@
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div class="flex-group">
-            <p class="new-price">$149.99</p>
-            <del class="old-price">$169.99</del>
+          <div class="content__price">
+            <p class="price__new">$149.99</p>
+            <del class="price__old">$169.99</del>
           </div>
           <button class="content__btn" data-icon="shopping-cart">
             Add to Cart
