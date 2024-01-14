@@ -176,7 +176,7 @@ body {
 
 .content__btn::before {
   content: "";
-  background-image: url("../images/icon-cart.svg");
+  background-image: url("images/icon-cart.svg");
   width: 15px;
   height: 16px;
 }
