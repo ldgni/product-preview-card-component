@@ -1,3 +1,31 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 /* GENERAL */
 
 body {
@@ -120,6 +148,7 @@ body {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   line-height: 2rem;
+  text-decoration: none;
 }
 
 .price__old {
@@ -142,7 +171,7 @@ body {
   padding: 1rem 0;
   width: 100%;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .content__btn::before {
